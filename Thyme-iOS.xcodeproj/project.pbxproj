@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4312057D24CD26BE001E6F2C /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312057C24CD26BE001E6F2C /* RecipeList.swift */; };
+		4312057F24CD2C01001E6F2C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312057E24CD2C01001E6F2C /* CircleImage.swift */; };
+		4312058124CD3F8D001E6F2C /* CuisineHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312058024CD3F8D001E6F2C /* CuisineHome.swift */; };
+		4312058324CD410C001E6F2C /* CuisineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312058224CD410C001E6F2C /* CuisineRow.swift */; };
+		43364D1824CD0FB500C1CADC /* Thyme_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D1724CD0FB500C1CADC /* Thyme_iOSApp.swift */; };
+		43364D1A24CD0FB500C1CADC /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D1924CD0FB500C1CADC /* RecipeDetail.swift */; };
+		43364D1C24CD0FB600C1CADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43364D1B24CD0FB600C1CADC /* Assets.xcassets */; };
+		43364D1F24CD0FB600C1CADC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43364D1E24CD0FB600C1CADC /* Preview Assets.xcassets */; };
+		43364D2A24CD0FB600C1CADC /* Thyme_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D2924CD0FB600C1CADC /* Thyme_iOSTests.swift */; };
+		43364D3524CD0FB600C1CADC /* Thyme_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D3424CD0FB600C1CADC /* Thyme_iOSUITests.swift */; };
+		43364D4524CD162700C1CADC /* RecipeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D4424CD162700C1CADC /* RecipeRow.swift */; };
+		43364D4824CD16F400C1CADC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D4724CD16F400C1CADC /* Recipe.swift */; };
+		43364D4B24CD195300C1CADC /* recipeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 43364D4A24CD195300C1CADC /* recipeData.json */; };
+		43364D4D24CD1C1100C1CADC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D4C24CD1C1100C1CADC /* Data.swift */; };
+		43364D5024CD218200C1CADC /* tjgfbrownies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43364D4E24CD218200C1CADC /* tjgfbrownies.jpg */; };
+		43364D5124CD218200C1CADC /* savorycarrots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43364D4F24CD218200C1CADC /* savorycarrots.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43364D2624CD0FB600C1CADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43364D0C24CD0FB500C1CADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43364D1324CD0FB500C1CADC;
+			remoteInfo = "Thyme-iOS";
+		};
+		43364D3124CD0FB600C1CADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43364D0C24CD0FB500C1CADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43364D1324CD0FB500C1CADC;
+			remoteInfo = "Thyme-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4312057C24CD26BE001E6F2C /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		4312057E24CD2C01001E6F2C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		4312058024CD3F8D001E6F2C /* CuisineHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineHome.swift; sourceTree = "<group>"; };
+		4312058224CD410C001E6F2C /* CuisineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineRow.swift; sourceTree = "<group>"; };
+		43364D1424CD0FB500C1CADC /* Thyme-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thyme-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43364D1724CD0FB500C1CADC /* Thyme_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thyme_iOSApp.swift; sourceTree = "<group>"; };
+		43364D1924CD0FB500C1CADC /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		43364D1B24CD0FB600C1CADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43364D1E24CD0FB600C1CADC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43364D2024CD0FB600C1CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43364D2524CD0FB600C1CADC /* Thyme-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thyme-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43364D2924CD0FB600C1CADC /* Thyme_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thyme_iOSTests.swift; sourceTree = "<group>"; };
+		43364D2B24CD0FB600C1CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43364D3024CD0FB600C1CADC /* Thyme-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Thyme-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43364D3424CD0FB600C1CADC /* Thyme_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thyme_iOSUITests.swift; sourceTree = "<group>"; };
+		43364D3624CD0FB600C1CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43364D4424CD162700C1CADC /* RecipeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRow.swift; sourceTree = "<group>"; };
+		43364D4724CD16F400C1CADC /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		43364D4A24CD195300C1CADC /* recipeData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipeData.json; sourceTree = "<group>"; };
+		43364D4C24CD1C1100C1CADC /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		43364D4E24CD218200C1CADC /* tjgfbrownies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tjgfbrownies.jpg; sourceTree = "<group>"; };
+		43364D4F24CD218200C1CADC /* savorycarrots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = savorycarrots.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43364D1124CD0FB500C1CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43364D2224CD0FB600C1CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43364D2D24CD0FB600C1CADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43364D0B24CD0FB500C1CADC = {
+			isa = PBXGroup;
+			children = (
+				43364D1624CD0FB500C1CADC /* Thyme-iOS */,
+				43364D2824CD0FB600C1CADC /* Thyme-iOSTests */,
+				43364D3324CD0FB600C1CADC /* Thyme-iOSUITests */,
+				43364D1524CD0FB500C1CADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43364D1524CD0FB500C1CADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43364D1424CD0FB500C1CADC /* Thyme-iOS.app */,
+				43364D2524CD0FB600C1CADC /* Thyme-iOSTests.xctest */,
+				43364D3024CD0FB600C1CADC /* Thyme-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43364D1624CD0FB500C1CADC /* Thyme-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				43364D1724CD0FB500C1CADC /* Thyme_iOSApp.swift */,
+				43364D1924CD0FB500C1CADC /* RecipeDetail.swift */,
+				43364D4424CD162700C1CADC /* RecipeRow.swift */,
+				4312057C24CD26BE001E6F2C /* RecipeList.swift */,
+				4312058024CD3F8D001E6F2C /* CuisineHome.swift */,
+				4312058224CD410C001E6F2C /* CuisineRow.swift */,
+				4312057E24CD2C01001E6F2C /* CircleImage.swift */,
+				43364D4924CD193000C1CADC /* Resources */,
+				43364D4624CD16E100C1CADC /* Models */,
+				43364D1B24CD0FB600C1CADC /* Assets.xcassets */,
+				43364D2024CD0FB600C1CADC /* Info.plist */,
+				43364D1D24CD0FB600C1CADC /* Preview Content */,
+			);
+			path = "Thyme-iOS";
+			sourceTree = "<group>";
+		};
+		43364D1D24CD0FB600C1CADC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43364D1E24CD0FB600C1CADC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43364D2824CD0FB600C1CADC /* Thyme-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				43364D2924CD0FB600C1CADC /* Thyme_iOSTests.swift */,
+				43364D2B24CD0FB600C1CADC /* Info.plist */,
+			);
+			path = "Thyme-iOSTests";
+			sourceTree = "<group>";
+		};
+		43364D3324CD0FB600C1CADC /* Thyme-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43364D3424CD0FB600C1CADC /* Thyme_iOSUITests.swift */,
+				43364D3624CD0FB600C1CADC /* Info.plist */,
+			);
+			path = "Thyme-iOSUITests";
+			sourceTree = "<group>";
+		};
+		43364D4624CD16E100C1CADC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				43364D4C24CD1C1100C1CADC /* Data.swift */,
+				43364D4724CD16F400C1CADC /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43364D4924CD193000C1CADC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43364D4F24CD218200C1CADC /* savorycarrots.jpg */,
+				43364D4E24CD218200C1CADC /* tjgfbrownies.jpg */,
+				43364D4A24CD195300C1CADC /* recipeData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43364D1324CD0FB500C1CADC /* Thyme-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43364D3924CD0FB600C1CADC /* Build configuration list for PBXNativeTarget "Thyme-iOS" */;
+			buildPhases = (
+				43364D1024CD0FB500C1CADC /* Sources */,
+				43364D1124CD0FB500C1CADC /* Frameworks */,
+				43364D1224CD0FB500C1CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thyme-iOS";
+			productName = "Thyme-iOS";
+			productReference = 43364D1424CD0FB500C1CADC /* Thyme-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43364D2424CD0FB600C1CADC /* Thyme-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43364D3C24CD0FB600C1CADC /* Build configuration list for PBXNativeTarget "Thyme-iOSTests" */;
+			buildPhases = (
+				43364D2124CD0FB600C1CADC /* Sources */,
+				43364D2224CD0FB600C1CADC /* Frameworks */,
+				43364D2324CD0FB600C1CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43364D2724CD0FB600C1CADC /* PBXTargetDependency */,
+			);
+			name = "Thyme-iOSTests";
+			productName = "Thyme-iOSTests";
+			productReference = 43364D2524CD0FB600C1CADC /* Thyme-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43364D2F24CD0FB600C1CADC /* Thyme-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43364D3F24CD0FB600C1CADC /* Build configuration list for PBXNativeTarget "Thyme-iOSUITests" */;
+			buildPhases = (
+				43364D2C24CD0FB600C1CADC /* Sources */,
+				43364D2D24CD0FB600C1CADC /* Frameworks */,
+				43364D2E24CD0FB600C1CADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43364D3224CD0FB600C1CADC /* PBXTargetDependency */,
+			);
+			name = "Thyme-iOSUITests";
+			productName = "Thyme-iOSUITests";
+			productReference = 43364D3024CD0FB600C1CADC /* Thyme-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43364D0C24CD0FB500C1CADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					43364D1324CD0FB500C1CADC = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					43364D2424CD0FB600C1CADC = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 43364D1324CD0FB500C1CADC;
+					};
+					43364D2F24CD0FB600C1CADC = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 43364D1324CD0FB500C1CADC;
+					};
+				};
+			};
+			buildConfigurationList = 43364D0F24CD0FB500C1CADC /* Build configuration list for PBXProject "Thyme-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43364D0B24CD0FB500C1CADC;
+			productRefGroup = 43364D1524CD0FB500C1CADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43364D1324CD0FB500C1CADC /* Thyme-iOS */,
+				43364D2424CD0FB600C1CADC /* Thyme-iOSTests */,
+				43364D2F24CD0FB600C1CADC /* Thyme-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43364D1224CD0FB500C1CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43364D4B24CD195300C1CADC /* recipeData.json in Resources */,
+				43364D1F24CD0FB600C1CADC /* Preview Assets.xcassets in Resources */,
+				43364D5124CD218200C1CADC /* savorycarrots.jpg in Resources */,
+				43364D1C24CD0FB600C1CADC /* Assets.xcassets in Resources */,
+				43364D5024CD218200C1CADC /* tjgfbrownies.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43364D2324CD0FB600C1CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43364D2E24CD0FB600C1CADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43364D1024CD0FB500C1CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43364D1A24CD0FB500C1CADC /* RecipeDetail.swift in Sources */,
+				4312057D24CD26BE001E6F2C /* RecipeList.swift in Sources */,
+				43364D4D24CD1C1100C1CADC /* Data.swift in Sources */,
+				4312057F24CD2C01001E6F2C /* CircleImage.swift in Sources */,
+				43364D1824CD0FB500C1CADC /* Thyme_iOSApp.swift in Sources */,
+				4312058124CD3F8D001E6F2C /* CuisineHome.swift in Sources */,
+				43364D4524CD162700C1CADC /* RecipeRow.swift in Sources */,
+				4312058324CD410C001E6F2C /* CuisineRow.swift in Sources */,
+				43364D4824CD16F400C1CADC /* Recipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43364D2124CD0FB600C1CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43364D2A24CD0FB600C1CADC /* Thyme_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43364D2C24CD0FB600C1CADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43364D3524CD0FB600C1CADC /* Thyme_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43364D2724CD0FB600C1CADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43364D1324CD0FB500C1CADC /* Thyme-iOS */;
+			targetProxy = 43364D2624CD0FB600C1CADC /* PBXContainerItemProxy */;
+		};
+		43364D3224CD0FB600C1CADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43364D1324CD0FB500C1CADC /* Thyme-iOS */;
+			targetProxy = 43364D3124CD0FB600C1CADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43364D3724CD0FB600C1CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43364D3824CD0FB600C1CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43364D3A24CD0FB600C1CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Thyme-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = L3W5FDZG36;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Thyme-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuellichlyter.Thyme-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43364D3B24CD0FB600C1CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Thyme-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = L3W5FDZG36;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Thyme-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuellichlyter.Thyme-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43364D3D24CD0FB600C1CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3W5FDZG36;
+				INFOPLIST_FILE = "Thyme-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuellichlyter.Thyme-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thyme-iOS.app/Thyme-iOS";
+			};
+			name = Debug;
+		};
+		43364D3E24CD0FB600C1CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3W5FDZG36;
+				INFOPLIST_FILE = "Thyme-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuellichlyter.Thyme-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thyme-iOS.app/Thyme-iOS";
+			};
+			name = Release;
+		};
+		43364D4024CD0FB600C1CADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3W5FDZG36;
+				INFOPLIST_FILE = "Thyme-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuellichlyter.Thyme-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Thyme-iOS";
+			};
+			name = Debug;
+		};
+		43364D4124CD0FB600C1CADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3W5FDZG36;
+				INFOPLIST_FILE = "Thyme-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.samuellichlyter.Thyme-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Thyme-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43364D0F24CD0FB500C1CADC /* Build configuration list for PBXProject "Thyme-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43364D3724CD0FB600C1CADC /* Debug */,
+				43364D3824CD0FB600C1CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43364D3924CD0FB600C1CADC /* Build configuration list for PBXNativeTarget "Thyme-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43364D3A24CD0FB600C1CADC /* Debug */,
+				43364D3B24CD0FB600C1CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43364D3C24CD0FB600C1CADC /* Build configuration list for PBXNativeTarget "Thyme-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43364D3D24CD0FB600C1CADC /* Debug */,
+				43364D3E24CD0FB600C1CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43364D3F24CD0FB600C1CADC /* Build configuration list for PBXNativeTarget "Thyme-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43364D4024CD0FB600C1CADC /* Debug */,
+				43364D4124CD0FB600C1CADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43364D0C24CD0FB500C1CADC /* Project object */;
+}

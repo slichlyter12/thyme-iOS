@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "name": "Gluten Free Brownies",
+        "author": "Trader Joe's",
+        "description": "Brownies made from a box :(",
+        "cuisine": "Dessert",
+        "ingredients": {
+            "Egg": "1",
+            "Water": "1/4 cup",
+            "Oil": "1/4 cup",
+            "Box packet": "1"
+        },
+        "steps": [
+            "Mix together egg and oil",
+            "Slowly mix in water",
+            "Add in box packet little bits at a time"
+        ],
+        "imageName": "tjgfbrownies"
+    }, {
+        "id": 1,
+        "name": "Savory Carrots",
+        "author": "Sam Lichlyter",
+        "description": "Modified from a website",
+        "cuisine": "Dinner",
+        "ingredients": {
+            "Carrots": "4 lbs",
+            "Olive Oil": "2 tbsp",
+            "Garlic Powder": "4 tsp",
+            "Paprika": "4 tsp",
+            "Salt & Pepper": "To taste"
+        },
+        "steps": [
+            "Preheat oven to 425 degrees",
+            "Peel carrots",
+            "Cut carrots into 1/2 inch thick coins and place on baking sheet",
+            "Add oil to carrots",
+            "Sprinkle on garlic powder, paprika, salt, and pepper",
+            "Mix together",
+            "Place in oven, flip after 10 minutes, cook for another 8-15 minutes"
+        ],
+        "imageName": "savorycarrots"
+    }
+]
