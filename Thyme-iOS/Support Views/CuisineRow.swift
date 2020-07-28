@@ -39,6 +39,7 @@ struct CuisineItem: View {
             recipe.image
                 .renderingMode(.original)
                 .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
             Text(recipe.name)
@@ -55,5 +56,6 @@ struct CuisineRow_Previews: PreviewProvider {
             cuisineName: recipeData[0].cuisine.rawValue,
             items: Array(recipeData.prefix(4))
         )
+        .previewLayout(.fixed(width: 400, height: 250))
     }
 }

@@ -3,7 +3,7 @@
         "id": 0,
         "name": "Gluten Free Brownies",
         "author": "Trader Joe's",
-        "description": "Brownies made from a box :(",
+        "description": "Brownies made from a box 😢",
         "cuisine": "Dessert",
         "ingredients": {
             "Egg": "1",
@@ -12,9 +12,11 @@
             "Box packet": "1"
         },
         "steps": [
+            "Preheat oven to 325º F",
             "Mix together egg and oil",
             "Slowly mix in water",
-            "Add in box packet little bits at a time"
+            "Add in box packet little bits at a time",
+            "Bake for 40 minutes"
         ],
         "imageName": "tjgfbrownies"
     }, {
@@ -31,7 +33,7 @@
             "Salt & Pepper": "To taste"
         },
         "steps": [
-            "Preheat oven to 425 degrees",
+            "Preheat oven to 425º F",
             "Peel carrots",
             "Cut carrots into 1/2 inch thick coins and place on baking sheet",
             "Add oil to carrots",
@@ -40,5 +42,30 @@
             "Place in oven, flip after 10 minutes, cook for another 8-15 minutes"
         ],
         "imageName": "savorycarrots"
+    }, {
+        "id": 2,
+        "name": "Cast Iron Burgers",
+        "author": "Sam Lichlyter",
+        "description": "Simple burgers made in a cast iron pan. Bacon ipsum dolor amet kevin proident pastrami hamburger, excepteur exercitation laborum ribeye dolor brisket short loin cillum tail prosciutto ham. Veniam fugiat ut fatback cillum beef ribs eiusmod short ribs kevin alcatra ipsum andouille. Alcatra in doner rump do biltong buffalo dolore pork belly pariatur. Cillum pork belly ut, pork strip steak consequat ipsum sausage sirloin esse chicken shankle drumstick beef. Ham porchetta tail tempor. Dolor pork loin doner kevin swine.",
+        "cuisine": "Dinner",
+        "ingredients": {
+            "Ground Chuck patties and a lot of other text": "2-4 patties",
+            "Hamburger Buns": "2-4 buns",
+            "Sharp Cheddar cheese": "2-4 slices",
+            "Salt & Pepper": "To taste",
+            "Mayo": "To taste"
+        },
+        "steps": [
+            "Salt and pepper patties",
+            "Preheat cast iron pan until it starts to slightly smoke",
+            "Place patties in pan until they start to darken around the edges and liquid seeps from the top",
+            "Flip patties",
+            "Wait approximately 2 minutes, then place cheese on each patty",
+            "Once cheese is melted, remove from pan and let rest for 4-5 minutes",
+            "Toast buns in a toaster oven for 2-3 minutes from cold",
+            "Prepare by placing mayo on both sides of the bun, place patty in bun, cut in half",
+            "Serve with either fries or tots"
+        ],
+        "imageName": "burgers"
     }
 ]

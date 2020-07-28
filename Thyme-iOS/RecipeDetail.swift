@@ -12,7 +12,7 @@ struct RecipeDetail: View {
     var recipe: Recipe
     
     var body: some View {
-        VStack {
+        ScrollView(.vertical, showsIndicators: false) {
             CircleImage(image: recipe.image)
                 .padding(.top, 15)
             
@@ -27,10 +27,46 @@ struct RecipeDetail: View {
                     Text(recipe.cuisine.rawValue)
                         .font(.subheadline)
                 }
+                
+                Text(recipe.description)
+                    .font(.caption)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 10)
+                
+                Text("Ingredients:")
+                    .font(.subheadline)
+                    .textCase(.uppercase)
+                    .padding(.top, 20)
+                    .padding(.bottom, 5)
+                ForEach(recipe.ingredients.keys.sorted(), id: \.self) { key in
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text("\(key): ")
+                            Spacer()
+                            Text(recipe.ingredients[key]!)
+                        }
+                        Divider()
+                    }
+                }
+                .padding(.leading, 15)
+                
+                Text("Steps:")
+                    .font(.subheadline)
+                    .textCase(.uppercase)
+                    .padding(.top, 20)
+                    .padding(.bottom, 5)
+                ForEach(recipe.steps.indices) { index in
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text("\(index + 1): ")
+                            Text(recipe.steps[index])
+                        }
+                        Divider()
+                    }
+                }
+                .padding(.leading, 15)
             }
             .padding()
-            
-            Spacer()
         }
         .navigationBarTitle(Text(recipe.name), displayMode: .inline)
     }
@@ -38,6 +74,6 @@ struct RecipeDetail: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetail(recipe: recipeData[0])
+        RecipeDetail(recipe: recipeData[2])
     }
 }

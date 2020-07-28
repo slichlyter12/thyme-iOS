@@ -25,12 +25,18 @@ struct CuisineHome: View {
                 }
             }
             .navigationBarTitle(Text("Cuisines"))
+            
+            Text("Select a recipe")
         }
     }
 }
 
 struct CuisineHome_Previews: PreviewProvider {
     static var previews: some View {
-        CuisineHome()
+        Group {
+            CuisineHome()
+            CuisineHome()
+                .preferredColorScheme(.dark)
+        }
     }
 }

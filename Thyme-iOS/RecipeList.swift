@@ -13,7 +13,7 @@ struct RecipeList: View {
             NavigationLink(destination: RecipeDetail(recipe: recipe)) {
                 RecipeRow(recipe: recipe)
             }
-        .navigationBarTitle(Text("Recipes"))
+        .navigationBarTitle(Text("All Recipes"))
         }
     }
 }
