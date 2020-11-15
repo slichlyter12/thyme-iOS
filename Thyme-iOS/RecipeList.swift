@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct RecipeList: View {
+    
+    var recipes: [Recipe]
+    
     var body: some View {
-        List(recipeData) { recipe in
+        List(recipes) { recipe in
             NavigationLink(destination: RecipeDetail(recipe: recipe)) {
                 RecipeRow(recipe: recipe)
             }
@@ -21,7 +24,7 @@ struct RecipeList: View {
 struct RecipeList_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            RecipeList()
+            RecipeList(recipes: recipeData)
         }
     }
 }

@@ -17,24 +17,23 @@ struct RecipeDetail: View {
                 .padding(.top, 15)
             
             VStack(alignment: .leading) {
-                Text(recipe.name)
-                    .font(.title)
-                
+                // Author + Cuisine
                 HStack(alignment: .top) {
                     Text(recipe.author)
-                        .font(.subheadline)
                     Spacer()
                     Text(recipe.cuisine.rawValue)
-                        .font(.subheadline)
                 }
+                .font(.subheadline)
+                Divider()
                 
+                // Description
                 Text(recipe.description)
-                    .font(.caption)
+                    .font(.body)
                     .multilineTextAlignment(.center)
                     .padding(.top, 10)
                 
                 Text("Ingredients:")
-                    .font(.subheadline)
+                    .font(.headline)
                     .textCase(.uppercase)
                     .padding(.top, 20)
                     .padding(.bottom, 5)
@@ -51,7 +50,7 @@ struct RecipeDetail: View {
                 .padding(.leading, 15)
                 
                 Text("Steps:")
-                    .font(.subheadline)
+                    .font(.headline)
                     .textCase(.uppercase)
                     .padding(.top, 20)
                     .padding(.bottom, 5)
@@ -68,7 +67,7 @@ struct RecipeDetail: View {
             }
             .padding()
         }
-        .navigationBarTitle(Text(recipe.name), displayMode: .inline)
+        .navigationBarTitle(Text(recipe.name), displayMode: .large)
     }
 }
 

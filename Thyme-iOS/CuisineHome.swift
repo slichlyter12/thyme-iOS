@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CuisineHome: View {
+    var recipes: [Recipe]
+    
     var cuisines: [String: [Recipe]] {
-        Dictionary(grouping: recipeData) { $0.cuisine.rawValue }
+        Dictionary(grouping: recipes) { $0.cuisine.rawValue }
     }
     
     var body: some View {
@@ -20,7 +22,7 @@ struct CuisineHome: View {
                 }
                 .listRowInsets(EdgeInsets())
                 
-                NavigationLink(destination: RecipeList()) {
+                NavigationLink(destination: RecipeList(recipes: recipes)) {
                     Text("See All")
                 }
             }
@@ -34,8 +36,8 @@ struct CuisineHome: View {
 struct CuisineHome_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CuisineHome()
-            CuisineHome()
+            CuisineHome(recipes: recipeData)
+            CuisineHome(recipes: recipeData)
                 .preferredColorScheme(.dark)
         }
     }

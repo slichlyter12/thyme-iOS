@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Recipe: Hashable, Codable, Identifiable {
-    var id: Int
+    var id: String
     var name: String
     var author: String
     var description: String

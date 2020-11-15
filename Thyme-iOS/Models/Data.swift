@@ -5,11 +5,39 @@ Abstract:
 Helpers for loading images and data.
 */
 
-import UIKit
 import SwiftUI
-import CoreLocation
 
 let recipeData: [Recipe] = load("recipeData.json")
+let fetchedRecipes: [Recipe] = fetch("http://localhost:8080/api/recipe")
+
+func fetch<T: Decodable>(_ urlString: String) -> T {
+    guard let url = URL(string: urlString)
+        else {
+            fatalError("Couldn't find url: \(urlString)")
+    }
+    
+    var result: T!
+    let semaphore = DispatchSemaphore(value: 0)
+    
+    URLSession.shared.dataTask(with: url) { data, response, error in
+        guard let data = data
+            else {
+            fatalError("No data received")
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            result = try decoder.decode(T.self, from: data)
+        } catch {
+            fatalError("Couldn't parse \(data) as \(T.self):\n\(error)")
+        }
+        
+        semaphore.signal()
+    }.resume()
+    
+    _ = semaphore.wait(timeout: .distantFuture)
+    return result
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

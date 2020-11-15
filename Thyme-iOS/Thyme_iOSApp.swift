@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Thyme_iOSApp: App {
+    @State private var recipes = [Recipe]()
+    
     var body: some Scene {
         WindowGroup {
-            CuisineHome()
+            CuisineHome(recipes: fetchedRecipes)
         }
     }
 }
