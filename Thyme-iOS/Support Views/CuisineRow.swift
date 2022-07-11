@@ -41,7 +41,7 @@ struct CuisineItem: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 155, height: 155)
-                .cornerRadius(5)
+                .cornerRadius(10)
             Text(recipe.name)
                 .foregroundColor(.primary)
                 .font(.caption)
@@ -53,8 +53,8 @@ struct CuisineItem: View {
 struct CuisineRow_Previews: PreviewProvider {
     static var previews: some View {
         CuisineRow(
-            cuisineName: recipeData[0].cuisine.rawValue,
-            items: Array(recipeData.prefix(4))
+            cuisineName: localRecipes[0].cuisine.rawValue,
+            items: Array(localRecipes.prefix(4))
         )
         .previewLayout(.fixed(width: 400, height: 250))
     }

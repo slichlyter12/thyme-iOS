@@ -23,6 +23,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage(image: Image("tjgfbrownies"))
+        CircleImage(image: ImageStore.shared.image(name: "burgers"))
     }
 }

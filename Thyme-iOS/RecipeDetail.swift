@@ -29,50 +29,50 @@ struct RecipeDetail: View {
                 // Description
                 Text(recipe.description)
                     .font(.body)
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
                     .padding(.top, 10)
                 
-                Text("Ingredients:")
-                    .font(.headline)
-                    .textCase(.uppercase)
-                    .padding(.top, 20)
-                    .padding(.bottom, 5)
-                ForEach(recipe.ingredients.keys.sorted(), id: \.self) { key in
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Text("\(key): ")
-                            Spacer()
-                            Text(recipe.ingredients[key]!)
+                if let ingredients = recipe.ingredients {
+                    Text("Ingredients:")
+                        .font(.headline)
+                        .textCase(.uppercase)
+                        .padding(.top, 20)
+                        .padding(.bottom, 5)
+                    ForEach(ingredients.keys.sorted(), id: \.self) { key in
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text("\(key): ")
+                                Spacer()
+                                Text(ingredients[key]!)
+                            }
+                            Divider()
                         }
-                        Divider()
                     }
+                    .padding(.leading, 15)
                 }
-                .padding(.leading, 15)
                 
-                Text("Steps:")
-                    .font(.headline)
-                    .textCase(.uppercase)
-                    .padding(.top, 20)
-                    .padding(.bottom, 5)
-                ForEach(recipe.steps.indices) { index in
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Text("\(index + 1): ")
-                            Text(recipe.steps[index])
-                        }
-                        Divider()
+                if let steps = recipe.steps {
+                    Text("Steps:")
+                        .font(.headline)
+                        .textCase(.uppercase)
+                        .padding(.top, 20)
+                        .padding(.bottom, 5)
+                    ForEach(0..<steps.count, id: \.self) { index in
+                        StepRowView(index: index, step: steps[index])
                     }
+                    .padding(.leading, 15)
                 }
-                .padding(.leading, 15)
             }
             .padding()
         }
-        .navigationBarTitle(Text(recipe.name), displayMode: .large)
+        .navigationBarTitle(Text(recipe.name), displayMode: .inline)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetail(recipe: recipeData[2])
+        NavigationView {
+            RecipeDetail(recipe: localRecipes[2])
+        }
     }
 }

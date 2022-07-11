@@ -24,8 +24,8 @@ struct RecipeRow: View {
 struct RecipeRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            RecipeRow(recipe: recipeData[0])
-            RecipeRow(recipe: recipeData[1])
+            RecipeRow(recipe: localRecipes[0])
+            RecipeRow(recipe: localRecipes[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

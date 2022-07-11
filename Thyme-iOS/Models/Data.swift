@@ -7,29 +7,48 @@ Helpers for loading images and data.
 
 import SwiftUI
 
-let recipeData: [Recipe] = load("recipeData.json")
-let fetchedRecipes: [Recipe] = fetch("http://localhost:8080/api/recipe")
+let healthUrl = "http://localhost:8080/api/status"
+let recipeUrl = "http://localhost:8080/api/recipe"
+let localRecipes: [Recipe] = load("recipeData.json")
+let fetchedRecipes: [Recipe]? = fetch(recipeUrl)
 
-func fetch<T: Decodable>(_ urlString: String) -> T {
+func fetch<T: Decodable>(_ urlString: String) -> T? {
     guard let url = URL(string: urlString)
         else {
             fatalError("Couldn't find url: \(urlString)")
     }
     
-    var result: T!
+    var result: T?
     let semaphore = DispatchSemaphore(value: 0)
     
     URLSession.shared.dataTask(with: url) { data, response, error in
-        guard let data = data
-            else {
-            fatalError("No data received")
+        if let error = error {
+            print("Error fetching recipes: \(error.localizedDescription)")
+            semaphore.signal()
+            return
+        }
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              (200...299).contains(httpResponse.statusCode) else {
+            print("non 200 response received")
+            semaphore.signal()
+            return
+        }
+        
+        print("Response status: \(httpResponse.statusCode)")
+        
+        guard let data = data else {
+            print("No data received")
+            semaphore.signal()
+            return
         }
         
         do {
             let decoder = JSONDecoder()
             result = try decoder.decode(T.self, from: data)
         } catch {
-            fatalError("Couldn't parse \(data) as \(T.self):\n\(error)")
+            NSLog("Couldn't parse \(data) as \(T.self):\n\(error)")
+            semaphore.signal()
         }
         
         semaphore.signal()

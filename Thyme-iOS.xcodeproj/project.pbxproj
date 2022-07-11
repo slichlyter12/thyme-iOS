@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430256FA287A347C00EFE53E /* AddIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430256F9287A347C00EFE53E /* AddIngredientView.swift */; };
 		430B4ED424CE24AB00388F1C /* burgers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 430B4ED324CE24AB00388F1C /* burgers.jpg */; };
 		4312057D24CD26BE001E6F2C /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312057C24CD26BE001E6F2C /* RecipeList.swift */; };
 		4312057F24CD2C01001E6F2C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312057E24CD2C01001E6F2C /* CircleImage.swift */; };
@@ -24,6 +25,9 @@
 		43364D4D24CD1C1100C1CADC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43364D4C24CD1C1100C1CADC /* Data.swift */; };
 		43364D5024CD218200C1CADC /* tjgfbrownies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43364D4E24CD218200C1CADC /* tjgfbrownies.jpg */; };
 		43364D5124CD218200C1CADC /* savorycarrots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43364D4F24CD218200C1CADC /* savorycarrots.jpg */; };
+		435653DD2878E6E300102667 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435653DC2878E6E300102667 /* Checkbox.swift */; };
+		43D110E228793C9100DC3CA7 /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D110E128793C9100DC3CA7 /* NewRecipeView.swift */; };
+		43D110E42879616900DC3CA7 /* StepRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D110E32879616900DC3CA7 /* StepRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430256F9287A347C00EFE53E /* AddIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientView.swift; sourceTree = "<group>"; };
 		430B4ED324CE24AB00388F1C /* burgers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burgers.jpg; sourceTree = "<group>"; };
 		4312057C24CD26BE001E6F2C /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
 		4312057E24CD2C01001E6F2C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 		43364D4C24CD1C1100C1CADC /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		43364D4E24CD218200C1CADC /* tjgfbrownies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tjgfbrownies.jpg; sourceTree = "<group>"; };
 		43364D4F24CD218200C1CADC /* savorycarrots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = savorycarrots.jpg; sourceTree = "<group>"; };
+		435653DC2878E6E300102667 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		43D110E128793C9100DC3CA7 /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
+		43D110E32879616900DC3CA7 /* StepRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,7 @@
 				43364D1924CD0FB500C1CADC /* RecipeDetail.swift */,
 				4312057C24CD26BE001E6F2C /* RecipeList.swift */,
 				4312058024CD3F8D001E6F2C /* CuisineHome.swift */,
+				43D110E128793C9100DC3CA7 /* NewRecipeView.swift */,
 				43D6738224CE89B400EE0B71 /* Support Views */,
 				43364D4924CD193000C1CADC /* Resources */,
 				43364D4624CD16E100C1CADC /* Models */,
@@ -180,7 +189,10 @@
 		43D6738224CE89B400EE0B71 /* Support Views */ = {
 			isa = PBXGroup;
 			children = (
+				43D110E32879616900DC3CA7 /* StepRowView.swift */,
+				430256F9287A347C00EFE53E /* AddIngredientView.swift */,
 				43364D4424CD162700C1CADC /* RecipeRow.swift */,
+				435653DC2878E6E300102667 /* Checkbox.swift */,
 				4312058224CD410C001E6F2C /* CuisineRow.swift */,
 				4312057E24CD2C01001E6F2C /* CircleImage.swift */,
 			);
@@ -323,8 +335,12 @@
 				43364D1A24CD0FB500C1CADC /* RecipeDetail.swift in Sources */,
 				4312057D24CD26BE001E6F2C /* RecipeList.swift in Sources */,
 				43364D4D24CD1C1100C1CADC /* Data.swift in Sources */,
+				43D110E42879616900DC3CA7 /* StepRowView.swift in Sources */,
+				43D110E228793C9100DC3CA7 /* NewRecipeView.swift in Sources */,
 				4312057F24CD2C01001E6F2C /* CircleImage.swift in Sources */,
+				435653DD2878E6E300102667 /* Checkbox.swift in Sources */,
 				43364D1824CD0FB500C1CADC /* Thyme_iOSApp.swift in Sources */,
+				430256FA287A347C00EFE53E /* AddIngredientView.swift in Sources */,
 				4312058124CD3F8D001E6F2C /* CuisineHome.swift in Sources */,
 				43364D4524CD162700C1CADC /* RecipeRow.swift in Sources */,
 				4312058324CD410C001E6F2C /* CuisineRow.swift in Sources */,
@@ -491,7 +507,7 @@
 				DEVELOPMENT_TEAM = L3W5FDZG36;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Thyme-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +532,7 @@
 				DEVELOPMENT_TEAM = L3W5FDZG36;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Thyme-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
